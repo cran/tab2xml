@@ -1,7 +1,7 @@
 Type: Package
 Package: tab2xml
 Title: XML Generation from Tables
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: c(
     person("Jose", "Samos", , "jsamos@ugr.es", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-4457-3439")),
@@ -21,9 +21,9 @@ Config/testthat/edition: 3
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-02-20 21:58:51 UTC; jsamos
+Packaged: 2025-04-01 18:18:22 UTC; jsamos
 Author: Jose Samos [aut, cre] (<https://orcid.org/0000-0002-4457-3439>),
   Universidad de Granada [cph]
 Maintainer: Jose Samos <jsamos@ugr.es>
 Repository: CRAN
-Date/Publication: 2025-02-21 19:40:02 UTC
+Date/Publication: 2025-04-01 18:30:02 UTC

@@ -114,16 +114,22 @@ xml_content <- readLines(source_xml, warn = FALSE)
 
 cat("```xml\n", paste(xml_content, collapse = "\n"), "\n```", sep = "")
 
-## ----example------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 library(tab2xml)
 
 # Define file paths
 source_xml <- system.file("extdata", "schema_template.xml", package = "tab2xml")
 source_xlsx <- system.file("extdata", "schema.xlsx", package = "tab2xml")
+
+# check files
+check_tab(source_xlsx, source_xml)
+
+## ----example------------------------------------------------------------------
+# Define output file
 temp_file <- tempfile(fileext = ".xml")
 
 # Convert spreadsheet to XML
-file <- sheet2xml(source_xlsx, source_xml, temp_file)
+file <- sheet2xml(source_xlsx, source_xml, temp_file, optimize = TRUE)
 
 ## ----results='asis'-----------------------------------------------------------
 library(xml2)
